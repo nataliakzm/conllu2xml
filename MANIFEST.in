@@ -1,5 +1,5 @@
-include src/conlluconvert/*
 include src/conlluparse/*
+include src/conlluconvert/*
 include src/lowercase/*
 include src/ner/*
 include pyproject.toml

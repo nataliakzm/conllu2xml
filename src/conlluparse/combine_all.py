@@ -1,3 +1,5 @@
+import os
+
 def conllu(input_dir, output_file):
     with open(output_file, 'w') as out_file:
         id = 1

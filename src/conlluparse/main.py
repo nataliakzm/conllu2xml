@@ -1,7 +1,5 @@
 import argparse
-import codecs
 import os
-import re
 import setting_conllu
 import combine_all
 import clean_all
@@ -59,9 +57,12 @@ def main(input_dir, output_dir):
         setting_conllu.write_conllu(output_file, lines)
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser()
-    parser.add_argument('input_dir', help='Path to the input directory')
-    parser.add_argument('output_dir', help='Path to the output directory')
-    args = parser.parse_args()
+    # Construct the argument parser and parse the arguments 
+    # Example of usage: python main.py -i input -o output
+    ap = argparse.ArgumentParser()
+    ap.add_argument('-i', '--input_dir', required=True, help='Path to the input directory')
+    ap.add_argument('-o', '--output_dir', required=True, help='Path to the output directory')
+    args = vars(ap.parse_args())
 
-    main(args.input_dir, args.output_dir)
+    # Call the main function 
+    main(args['input_dir'], args['output_dir'])

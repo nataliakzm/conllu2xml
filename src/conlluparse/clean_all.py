@@ -1,3 +1,4 @@
+import re
 import setting_conllu
 
 # Change values in the UPOS column  
