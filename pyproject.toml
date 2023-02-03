@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "conllu2xml"
+version = "1.0"
+authors = ["Natalia Kuzminykh contact@nataliakzm.codes"]
+
+[tool.poetry.dependencies]
+python = "^3.8.10"
+argparse = "*"
+codecs = "*"
+os = "*"
+re = "*"
+stanza = "*"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["setuptools", "wheel"]

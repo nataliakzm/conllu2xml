@@ -1,0 +1,7 @@
+include src/conlluconvert/*
+include src/conlluparse/*
+include src/lowercase/*
+include src/ner/*
+include pyproject.toml
+include README.md
+include LICENSE
