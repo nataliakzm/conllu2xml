@@ -14,10 +14,10 @@ setup(
         'conllu2xml',
         'conlluparse',
         'argparse',
-        'codecs',
-        'os',
-        're',
-        'stanza'
+        'os-sys',
+        'regex',
+        'stanza',
+        'nltk'
     ],
     zip_safe=False
 )

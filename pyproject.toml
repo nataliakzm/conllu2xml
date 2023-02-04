@@ -1,17 +1,30 @@
-[tool.poetry]
+[conllu2xml]
+
+#$ pip install conllu2xml
+
 name = "conllu2xml"
-version = "0.1"
-authors = ["Natalia Kuzminykh contact@nataliakzm.codes"]
+version = "1.0.0"
 
-[tool.poetry.dependencies]
-python = "^3.8.10"
-argparse = "*"
-codecs = "*"
-os = "*"
-re = "*"
-stanza = "*"
+authors = [
+	{ name = "Natalia Kuzminykh", 
+	email = "contact@nataliakzm.codes"}]
 
-[tool.poetry.dev-dependencies]
+readme = "README.md"
+
+requires-python = ">=3.8.10"
+
+keywords = ["conllu", "xml", "trf", "UD", "corpus", "parse", "convert", "linguistic"]
+
+classifiers = ["Development Status :: 5 - Production/Stable",
+	"License :: OSI Approved :: MIT License"]
+
+dependencies = [
+	"argparse",
+	"os-sys",
+	"regex",
+	"stanza",
+	"nltk"]
 
 [build-system]
-requires = ["setuptools", "wheel"]
+requires = ["setuptools>=43.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
