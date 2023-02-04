@@ -2,6 +2,7 @@ include src/conlluparse/*
 include src/conlluconvert/*
 include src/lowercase/*
 include src/ner/*
+include tests/*
 include pyproject.toml
 include README.md
 include LICENSE
