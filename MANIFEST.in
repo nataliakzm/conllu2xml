@@ -1,7 +1,7 @@
-include src/conlluparse/*
-include src/conlluconvert/*
-include src/lowercase/*
-include src/ner/*
+include src/conllu2xml/conlluparse/*
+include src/conllu2xml/conlluconvert/*
+include src/conllu2xml/lowercase/*
+include src/conllu2xml/ner/*
 include tests/*
 include pyproject.toml
 include README.md
