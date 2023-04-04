@@ -1,8 +1,8 @@
-include src/conllu2xml/conlluparse/*
-include src/conllu2xml/conlluconvert/*
-include src/conllu2xml/lowercase/*
-include src/conllu2xml/ner/*
+include conllu2xml/conlluparse/*
+include conllu2xml/conlluconvert/*
+include conllu2xml/lowercase/*
+include conllu2xml/ner/*
 include tests/*
 include pyproject.toml
 include README.md
-include LICENSE
+include LICENSE.txt

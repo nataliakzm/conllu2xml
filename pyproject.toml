@@ -1,30 +1,24 @@
-[conllu2xml]
-
-#$ pip install conllu2xml
-
+[tool.poetry]
 name = "conllu2xml"
 version = "1.0.0"
-
-authors = [
-	{ name = "Natalia Kuzminykh", 
-	email = "contact@nataliakzm.codes"}]
-
+description = "Converts, clean and parse CoNLL-U files to XML and/or TRF files"
+authors = ["Natalia Kuzminykh <contact@nataliakzm.codes>"]
 readme = "README.md"
-
-requires-python = ">=3.8.10"
-
 keywords = ["conllu", "xml", "trf", "UD", "corpus", "parse", "convert", "linguistic"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "License :: OSI Approved :: MIT License"
+]
 
-classifiers = ["Development Status :: 5 - Production/Stable",
-	"License :: OSI Approved :: MIT License"]
+[tool.poetry.dependencies]
+python = ">=3.8.10"
+argparse = "*"
+regex = "*"
+stanza = "*"
+nltk = "*"
 
-dependencies = [
-	"argparse",
-	"os-sys",
-	"regex",
-	"stanza",
-	"nltk"]
+[tool.poetry.dev-dependencies]
 
 [build-system]
-requires = ["setuptools>=43.0.0", "wheel"]
-build-backend = "setuptools.build_meta"
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
