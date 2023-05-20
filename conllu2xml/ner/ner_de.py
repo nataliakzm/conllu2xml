@@ -13,6 +13,14 @@ stanza.download('de') # GERMAN
 nlp = stanza.Pipeline('de', processors='tokenize,ner')
 
 def extract_words(lines):
+    """
+    Extracts words from a list of lines in a .conllu file.
+    Args:
+        lines (list of str): The lines to process.
+
+    Returns:
+        list of str: The processed lines.
+    """    
     output_lines = []
     for line in lines:
         if line.startswith("# id = "):

@@ -1,6 +1,10 @@
+# combine_all.py
 import os
 
 def conllu(input_dir, output_file):
+    """
+    This function combines all .conllu files in the input directory into one file.
+    """
     with open(output_file, 'w') as out_file:
         id = 1
         for file in os.listdir(input_dir):
@@ -18,6 +22,9 @@ def conllu(input_dir, output_file):
                     out_file.write('\n')
 
 def dupl_check(input_file):
+    """
+    This function removes duplicate lines in the combined .conllu file and updates the ids.
+    """
     texts = {}
     with open(input_file, 'r') as in_file:
         lines = in_file.readlines()

@@ -1,3 +1,6 @@
+# setting_conllu.py
+# This script is used to set the id of the conllu file and delete unnecessary hash lines
+
 def read_conllu(file_path):
     with open(file_path, 'r') as f:
         lines = f.readlines()

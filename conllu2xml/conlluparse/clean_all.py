@@ -1,3 +1,6 @@
+# clean_all.py
+# This script is used to clean all the conllu files in the folder
+
 import re
 import setting_conllu
 

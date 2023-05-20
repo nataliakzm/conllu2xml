@@ -1,3 +1,5 @@
+# This script is the main script for the conlluparse. It calls the functions from setting_conllu.py, combine_all.py, and clean_all.py.
+
 import argparse
 import os
 import setting_conllu
